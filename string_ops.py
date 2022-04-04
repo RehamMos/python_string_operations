@@ -69,9 +69,7 @@ def f(string):
   try:
     for i in range (len(string)):
       sub = string[:i+1]
-      print(sub)
       k = len(string)//len(sub)
-      print(sub * k)
       if sub * k == string:
         return (sub, k)
   except TypeError:
